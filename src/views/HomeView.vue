@@ -53,6 +53,6 @@ onMounted(async () => {
 });
 
 const postFilter = () => {
-  return post.value.filter((p) => p.title.includes(title1.value));
+  return post.value.filter((p) => p.title.includes(title1.value.toLowerCase()));
 };
 </script>
