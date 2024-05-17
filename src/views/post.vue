@@ -18,7 +18,7 @@
       </button>
     </div>
 
-    <div class=":sm:m-20 bg-orange-100 sm:rounded-3xl sm:w-2/3 py-5 px-20">
+    <div class="sm:m-20 bg-orange-100 sm:rounded-3xl sm:w-2/3 py-5 px-20">
       <span v-if="show" class="text-3xl p-5 text-blue-500">comments</span>
       <span v-if="!show" class="text-3xl p-5 text-blue-500"
         >the required comment</span
