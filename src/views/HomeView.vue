@@ -1,5 +1,13 @@
 <template>
-  <div class="flex flex-col w-full">
+  <div
+    v-if="post.length == 0"
+    class="w-full gap-x-2 flex justify-center items-center h-full"
+  >
+    <div
+      class="w-[48px] h-[48px] m-auto relative before:content-[''] before:w-[48px] before:h-[5px] before:bg-[#f0808050] before:absolute before:top-[60px] before:left-[0px] before:rounded-[50%] before:animate-[shadow324_0.5s_linear_infinite] after:content-[''] after:w-[100%] after:h-[100%] after:bg-[#f08080] after:absolute after:top-[0px] after:left-[0px] after:rounded-[4px] after:animate-[jump7456_0.5s_linear_infinite]"
+    ></div>
+  </div>
+  <div v-if="post.length > 0" class="flex flex-col w-full">
     <Header @search-title="searchTitle" />
     <div class="rounded-full grid grid-cols-1 gap-5 p-5 sm:grid-cols-3">
       <div
